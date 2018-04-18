@@ -4,10 +4,11 @@ using System.Diagnostics;
 using System.Windows.Forms;
 using System.IO;
 using System;
+using static Simple_Injector.Logger;
 
 namespace Simple_Injector
 {
-    public partial class Interface : Form
+    public partial class Interface : Form, IStatusLogger
     {
         private readonly DataTable _processTable = new DataTable("processTable");
        
@@ -22,6 +23,13 @@ namespace Simple_Injector
         public Interface()
         {
             InitializeComponent();
+        }
+
+        public void LogStatus(string status)
+        {
+            // Display the status
+
+            StatusLabel.Text += status + Environment.NewLine + Environment.NewLine;
         }
 
         private void Interface_Load(object sender, EventArgs e)
@@ -40,7 +48,7 @@ namespace Simple_Injector
             
             // Create an instance of Injector
             
-            _injector = new Injector(LoadLibraryALabel, ProcessHandleLabel, AllocateMemoryLabel, WriteMemoryLabel, CreateRemoteThreadLabel);
+            _injector = new Injector(this);
         }
 
         private void InitializeDataTable()

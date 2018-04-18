@@ -43,11 +43,7 @@
             this.OpenProcessesGroupBox = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.StatusGroupBox = new System.Windows.Forms.GroupBox();
-            this.LoadLibraryALabel = new System.Windows.Forms.Label();
-            this.ProcessHandleLabel = new System.Windows.Forms.Label();
-            this.AllocateMemoryLabel = new System.Windows.Forms.Label();
-            this.WriteMemoryLabel = new System.Windows.Forms.Label();
-            this.CreateRemoteThreadLabel = new System.Windows.Forms.Label();
+            this.StatusLabel = new System.Windows.Forms.Label();
             this.OptionsGroupBox.SuspendLayout();
             this.InjectorGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProcessDataGrid)).BeginInit();
@@ -204,11 +200,7 @@
             // 
             // StatusGroupBox
             // 
-            this.StatusGroupBox.Controls.Add(this.CreateRemoteThreadLabel);
-            this.StatusGroupBox.Controls.Add(this.WriteMemoryLabel);
-            this.StatusGroupBox.Controls.Add(this.AllocateMemoryLabel);
-            this.StatusGroupBox.Controls.Add(this.ProcessHandleLabel);
-            this.StatusGroupBox.Controls.Add(this.LoadLibraryALabel);
+            this.StatusGroupBox.Controls.Add(this.StatusLabel);
             this.StatusGroupBox.Location = new System.Drawing.Point(220, 301);
             this.StatusGroupBox.Name = "StatusGroupBox";
             this.StatusGroupBox.Size = new System.Drawing.Size(192, 178);
@@ -216,45 +208,13 @@
             this.StatusGroupBox.TabStop = false;
             this.StatusGroupBox.Text = "Status";
             // 
-            // LoadLibraryALabel
+            // StatusLabel
             // 
-            this.LoadLibraryALabel.AutoSize = true;
-            this.LoadLibraryALabel.Location = new System.Drawing.Point(7, 29);
-            this.LoadLibraryALabel.Name = "LoadLibraryALabel";
-            this.LoadLibraryALabel.Size = new System.Drawing.Size(0, 13);
-            this.LoadLibraryALabel.TabIndex = 0;
-            // 
-            // ProcessHandleLabel
-            // 
-            this.ProcessHandleLabel.AutoSize = true;
-            this.ProcessHandleLabel.Location = new System.Drawing.Point(7, 58);
-            this.ProcessHandleLabel.Name = "ProcessHandleLabel";
-            this.ProcessHandleLabel.Size = new System.Drawing.Size(0, 13);
-            this.ProcessHandleLabel.TabIndex = 1;
-            // 
-            // AllocateMemoryLabel
-            // 
-            this.AllocateMemoryLabel.AutoSize = true;
-            this.AllocateMemoryLabel.Location = new System.Drawing.Point(7, 87);
-            this.AllocateMemoryLabel.Name = "AllocateMemoryLabel";
-            this.AllocateMemoryLabel.Size = new System.Drawing.Size(0, 13);
-            this.AllocateMemoryLabel.TabIndex = 2;
-            // 
-            // WriteMemoryLabel
-            // 
-            this.WriteMemoryLabel.AutoSize = true;
-            this.WriteMemoryLabel.Location = new System.Drawing.Point(7, 116);
-            this.WriteMemoryLabel.Name = "WriteMemoryLabel";
-            this.WriteMemoryLabel.Size = new System.Drawing.Size(0, 13);
-            this.WriteMemoryLabel.TabIndex = 3;
-            // 
-            // CreateRemoteThreadLabel
-            // 
-            this.CreateRemoteThreadLabel.AutoSize = true;
-            this.CreateRemoteThreadLabel.Location = new System.Drawing.Point(7, 145);
-            this.CreateRemoteThreadLabel.Name = "CreateRemoteThreadLabel";
-            this.CreateRemoteThreadLabel.Size = new System.Drawing.Size(0, 13);
-            this.CreateRemoteThreadLabel.TabIndex = 4;
+            this.StatusLabel.AutoSize = true;
+            this.StatusLabel.Location = new System.Drawing.Point(6, 16);
+            this.StatusLabel.Name = "StatusLabel";
+            this.StatusLabel.Size = new System.Drawing.Size(0, 13);
+            this.StatusLabel.TabIndex = 0;
             // 
             // Interface
             // 
@@ -301,11 +261,7 @@
         private System.Windows.Forms.GroupBox OpenProcessesGroupBox;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox StatusGroupBox;
-        private System.Windows.Forms.Label LoadLibraryALabel;
-        private System.Windows.Forms.Label CreateRemoteThreadLabel;
-        private System.Windows.Forms.Label WriteMemoryLabel;
-        private System.Windows.Forms.Label AllocateMemoryLabel;
-        private System.Windows.Forms.Label ProcessHandleLabel;
+        private System.Windows.Forms.Label StatusLabel;
     }
 }
 
