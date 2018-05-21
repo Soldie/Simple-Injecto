@@ -121,6 +121,8 @@ namespace Simple_Injector
             else
             {
                 _statusLogger.LogStatus("Successfully created remote thread");
+                
+                _statusLogger.LogStatus("Successfully injected DLL");
             }
         }
     }

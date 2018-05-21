@@ -140,13 +140,25 @@ namespace Simple_Injector
 
             var processName = SelectedProcessTextBox.Text;
 
-            _injector.Inject(processName, _dllPath);
-
-            // Close the injector if _closeAfterInject is true
-            
-            if (_closeAfterInject)
+            if (DLLFileTextBox.Text.Length > 0 && SelectedProcessTextBox.Text.Length > 0)
             {
-                Application.Exit();
+                // Only inject if a process and a DLL file is chosen
+                
+                _injector.Inject(processName, _dllPath);
+                
+                // Close the injector if _closeAfterInject is true
+            
+                if (_closeAfterInject)
+                {
+                    Application.Exit();
+                }
+            }
+
+            else
+            {
+                // Notify user that they need to select a process and a DLL file
+                
+                MessageBox.Show(@"Ensure a process and DLL file is chosen"); 
             }
         }
 
