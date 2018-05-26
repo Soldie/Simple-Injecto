@@ -54,7 +54,7 @@ namespace Simple_Injector
         {           
             // Get the process id
             
-            var processId = Process.GetProcessesByName(processName)[0].Id;
+            var processId = Process.GetProcessesByName(processName)[0].Id;    
                 
             // Get the address of LoadLibraryA
             
@@ -98,7 +98,6 @@ namespace Simple_Injector
                 _statusLogger.LogStatus("Successfully allocated memory");
             }
             
-               
             // Write memory in the process
             
             if (WriteProcessMemory(processHandle, memory, Encoding.Default.GetBytes(dllPath), (uint)(dllPath.Length + 1), 0) == 0)
