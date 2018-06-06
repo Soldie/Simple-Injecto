@@ -38,13 +38,13 @@ namespace Simple_Injector
 
             // Set the datasource of the datagrid
 
-            ProcessDataGrid.DataSource = _processTable;
+            processDataGrid.DataSource = _processTable;
 
             PopulateDataTable();
 
             // Sort the processes
 
-            ProcessDataGrid.Sort(ProcessDataGrid.Columns["Name"], ListSortDirection.Ascending);
+            processDataGrid.Sort(processDataGrid.Columns["Name"], ListSortDirection.Ascending);
             
             // Create an instance of Injector
             
@@ -75,19 +75,19 @@ namespace Simple_Injector
         {
             // Get the process that has been clicked
 
-            var process = ProcessDataGrid.Rows[e.RowIndex].Cells[e.ColumnIndex];
+            var process = processDataGrid.Rows[e.RowIndex].Cells[e.ColumnIndex];
 
             // Set the text of SelectedProcessTextBox to the process name
 
-            SelectedProcessTextBox.Text = Convert.ToString(process.FormattedValue);
+            selectedProcessTextBox.Text = Convert.ToString(process.FormattedValue);
 
             // If _autoInject is true and a dll has been chosen then inject
             
-            if (_autoInject & DLLFileTextBox.Text.Length > 1)
+            if (_autoInject & dllFileTextBox.Text.Length > 1)
             {
                 // Get the chosen process
                 
-                var processName = SelectedProcessTextBox.Text;
+                var processName = selectedProcessTextBox.Text;
 
                 _injector.Inject(processName, _dllPath);
                 
@@ -113,15 +113,15 @@ namespace Simple_Injector
 
             // Set the text of DLLFileTextBox to the dll name
 
-            DLLFileTextBox.Text = Path.GetFileNameWithoutExtension(dll);
+            dllFileTextBox.Text = Path.GetFileNameWithoutExtension(dll);
             
             // If _autoInject is true and a dll has been chosen then inject
             
-            if (_autoInject & SelectedProcessTextBox.Text.Length > 1)
+            if (_autoInject & selectedProcessTextBox.Text.Length > 1)
             {
                 // Get the chosen process
                 
-                var processName = SelectedProcessTextBox.Text;
+                var processName = selectedProcessTextBox.Text;
 
                 _injector.Inject(processName, _dllPath);
                 
@@ -138,9 +138,9 @@ namespace Simple_Injector
         {
             // Get the chosen process
 
-            var processName = SelectedProcessTextBox.Text;
+            var processName = selectedProcessTextBox.Text;
 
-            if (DLLFileTextBox.Text.Length > 0 && SelectedProcessTextBox.Text.Length > 0)
+            if (dllFileTextBox.Text.Length > 0 && selectedProcessTextBox.Text.Length > 0)
             {
                 // Only inject if a process and a DLL file is chosen
                 
@@ -164,12 +164,12 @@ namespace Simple_Injector
 
         private void CloseAfterInjectCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            _closeAfterInject = CloseAfterInjectCheckBox.Checked;
+            _closeAfterInject = closeAfterInjectCheckBox.Checked;
         }
 
         private void AutoInjectCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            _autoInject = AutoInjectCheckBox.Checked;
+            _autoInject = autoInjectCheckBox.Checked;
         }
     }
 }

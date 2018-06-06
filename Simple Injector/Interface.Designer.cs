@@ -28,130 +28,130 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.CloseAfterInjectCheckBox = new System.Windows.Forms.CheckBox();
-            this.AutoInjectCheckBox = new System.Windows.Forms.CheckBox();
-            this.OptionsGroupBox = new System.Windows.Forms.GroupBox();
-            this.DLLFileTextBox = new System.Windows.Forms.TextBox();
-            this.InjectDLLButton = new System.Windows.Forms.Button();
-            this.ChooseDLLButton = new System.Windows.Forms.Button();
-            this.SelectedProcessTextBox = new System.Windows.Forms.TextBox();
-            this.DLLFileLabel = new System.Windows.Forms.Label();
-            this.SelectedProcessLabel = new System.Windows.Forms.Label();
-            this.InjectorGroupBox = new System.Windows.Forms.GroupBox();
+            this.closeAfterInjectCheckBox = new System.Windows.Forms.CheckBox();
+            this.autoInjectCheckBox = new System.Windows.Forms.CheckBox();
+            this.optionsGroupBox = new System.Windows.Forms.GroupBox();
+            this.dllFileTextBox = new System.Windows.Forms.TextBox();
+            this.injectDLLButton = new System.Windows.Forms.Button();
+            this.chooseDLLButton = new System.Windows.Forms.Button();
+            this.selectedProcessTextBox = new System.Windows.Forms.TextBox();
+            this.dllFileLabel = new System.Windows.Forms.Label();
+            this.selectedProcessLabel = new System.Windows.Forms.Label();
+            this.injectorGroupBox = new System.Windows.Forms.GroupBox();
             this.FileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.ProcessDataGrid = new System.Windows.Forms.DataGridView();
+            this.processDataGrid = new System.Windows.Forms.DataGridView();
             this.OpenProcessesGroupBox = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.StatusGroupBox = new System.Windows.Forms.GroupBox();
+            this.statusGroupBox = new System.Windows.Forms.GroupBox();
             this.StatusLabel = new System.Windows.Forms.Label();
-            this.OptionsGroupBox.SuspendLayout();
-            this.InjectorGroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ProcessDataGrid)).BeginInit();
+            this.optionsGroupBox.SuspendLayout();
+            this.injectorGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.processDataGrid)).BeginInit();
             this.OpenProcessesGroupBox.SuspendLayout();
-            this.StatusGroupBox.SuspendLayout();
+            this.statusGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
-            // CloseAfterInjectCheckBox
+            // closeAfterInjectCheckBox
             // 
-            this.CloseAfterInjectCheckBox.AutoSize = true;
-            this.CloseAfterInjectCheckBox.Location = new System.Drawing.Point(5, 19);
-            this.CloseAfterInjectCheckBox.Name = "CloseAfterInjectCheckBox";
-            this.CloseAfterInjectCheckBox.Size = new System.Drawing.Size(106, 17);
-            this.CloseAfterInjectCheckBox.TabIndex = 0;
-            this.CloseAfterInjectCheckBox.Text = "Close After Inject";
-            this.CloseAfterInjectCheckBox.UseVisualStyleBackColor = true;
-            this.CloseAfterInjectCheckBox.CheckedChanged += new System.EventHandler(this.CloseAfterInjectCheckBox_CheckedChanged);
+            this.closeAfterInjectCheckBox.AutoSize = true;
+            this.closeAfterInjectCheckBox.Location = new System.Drawing.Point(5, 19);
+            this.closeAfterInjectCheckBox.Name = "closeAfterInjectCheckBox";
+            this.closeAfterInjectCheckBox.Size = new System.Drawing.Size(106, 17);
+            this.closeAfterInjectCheckBox.TabIndex = 0;
+            this.closeAfterInjectCheckBox.Text = "Close After Inject";
+            this.closeAfterInjectCheckBox.UseVisualStyleBackColor = true;
+            this.closeAfterInjectCheckBox.CheckedChanged += new System.EventHandler(this.CloseAfterInjectCheckBox_CheckedChanged);
             // 
-            // AutoInjectCheckBox
+            // autoInjectCheckBox
             // 
-            this.AutoInjectCheckBox.AutoSize = true;
-            this.AutoInjectCheckBox.Location = new System.Drawing.Point(5, 43);
-            this.AutoInjectCheckBox.Name = "AutoInjectCheckBox";
-            this.AutoInjectCheckBox.Size = new System.Drawing.Size(77, 17);
-            this.AutoInjectCheckBox.TabIndex = 1;
-            this.AutoInjectCheckBox.Text = "Auto Inject";
-            this.AutoInjectCheckBox.UseVisualStyleBackColor = true;
-            this.AutoInjectCheckBox.CheckedChanged += new System.EventHandler(this.AutoInjectCheckBox_CheckedChanged);
+            this.autoInjectCheckBox.AutoSize = true;
+            this.autoInjectCheckBox.Location = new System.Drawing.Point(5, 43);
+            this.autoInjectCheckBox.Name = "autoInjectCheckBox";
+            this.autoInjectCheckBox.Size = new System.Drawing.Size(77, 17);
+            this.autoInjectCheckBox.TabIndex = 1;
+            this.autoInjectCheckBox.Text = "Auto Inject";
+            this.autoInjectCheckBox.UseVisualStyleBackColor = true;
+            this.autoInjectCheckBox.CheckedChanged += new System.EventHandler(this.AutoInjectCheckBox_CheckedChanged);
             // 
-            // OptionsGroupBox
+            // optionsGroupBox
             // 
-            this.OptionsGroupBox.Controls.Add(this.AutoInjectCheckBox);
-            this.OptionsGroupBox.Controls.Add(this.CloseAfterInjectCheckBox);
-            this.OptionsGroupBox.Location = new System.Drawing.Point(220, 229);
-            this.OptionsGroupBox.Name = "OptionsGroupBox";
-            this.OptionsGroupBox.Size = new System.Drawing.Size(192, 71);
-            this.OptionsGroupBox.TabIndex = 4;
-            this.OptionsGroupBox.TabStop = false;
-            this.OptionsGroupBox.Text = "Options";
+            this.optionsGroupBox.Controls.Add(this.autoInjectCheckBox);
+            this.optionsGroupBox.Controls.Add(this.closeAfterInjectCheckBox);
+            this.optionsGroupBox.Location = new System.Drawing.Point(220, 229);
+            this.optionsGroupBox.Name = "optionsGroupBox";
+            this.optionsGroupBox.Size = new System.Drawing.Size(192, 71);
+            this.optionsGroupBox.TabIndex = 4;
+            this.optionsGroupBox.TabStop = false;
+            this.optionsGroupBox.Text = "Options";
             // 
-            // DLLFileTextBox
+            // dllFileTextBox
             // 
-            this.DLLFileTextBox.Location = new System.Drawing.Point(5, 35);
-            this.DLLFileTextBox.Name = "DLLFileTextBox";
-            this.DLLFileTextBox.ReadOnly = true;
-            this.DLLFileTextBox.Size = new System.Drawing.Size(182, 20);
-            this.DLLFileTextBox.TabIndex = 0;
+            this.dllFileTextBox.Location = new System.Drawing.Point(5, 35);
+            this.dllFileTextBox.Name = "dllFileTextBox";
+            this.dllFileTextBox.ReadOnly = true;
+            this.dllFileTextBox.Size = new System.Drawing.Size(182, 20);
+            this.dllFileTextBox.TabIndex = 0;
             // 
-            // InjectDLLButton
+            // injectDLLButton
             // 
-            this.InjectDLLButton.Location = new System.Drawing.Point(98, 125);
-            this.InjectDLLButton.Name = "InjectDLLButton";
-            this.InjectDLLButton.Size = new System.Drawing.Size(89, 23);
-            this.InjectDLLButton.TabIndex = 1;
-            this.InjectDLLButton.Text = "Inject DLL";
-            this.InjectDLLButton.UseVisualStyleBackColor = true;
-            this.InjectDLLButton.Click += new System.EventHandler(this.InjectDLLButton_Click);
+            this.injectDLLButton.Location = new System.Drawing.Point(98, 125);
+            this.injectDLLButton.Name = "injectDLLButton";
+            this.injectDLLButton.Size = new System.Drawing.Size(89, 23);
+            this.injectDLLButton.TabIndex = 1;
+            this.injectDLLButton.Text = "Inject DLL";
+            this.injectDLLButton.UseVisualStyleBackColor = true;
+            this.injectDLLButton.Click += new System.EventHandler(this.InjectDLLButton_Click);
             // 
-            // ChooseDLLButton
+            // chooseDLLButton
             // 
-            this.ChooseDLLButton.Location = new System.Drawing.Point(5, 125);
-            this.ChooseDLLButton.Name = "ChooseDLLButton";
-            this.ChooseDLLButton.Size = new System.Drawing.Size(89, 23);
-            this.ChooseDLLButton.TabIndex = 2;
-            this.ChooseDLLButton.Text = "Choose DLL";
-            this.ChooseDLLButton.UseVisualStyleBackColor = true;
-            this.ChooseDLLButton.Click += new System.EventHandler(this.ChooseDLLButton_Click);
+            this.chooseDLLButton.Location = new System.Drawing.Point(5, 125);
+            this.chooseDLLButton.Name = "chooseDLLButton";
+            this.chooseDLLButton.Size = new System.Drawing.Size(89, 23);
+            this.chooseDLLButton.TabIndex = 2;
+            this.chooseDLLButton.Text = "Choose DLL";
+            this.chooseDLLButton.UseVisualStyleBackColor = true;
+            this.chooseDLLButton.Click += new System.EventHandler(this.ChooseDLLButton_Click);
             // 
-            // SelectedProcessTextBox
+            // selectedProcessTextBox
             // 
-            this.SelectedProcessTextBox.Location = new System.Drawing.Point(5, 85);
-            this.SelectedProcessTextBox.Name = "SelectedProcessTextBox";
-            this.SelectedProcessTextBox.ReadOnly = true;
-            this.SelectedProcessTextBox.Size = new System.Drawing.Size(182, 20);
-            this.SelectedProcessTextBox.TabIndex = 3;
+            this.selectedProcessTextBox.Location = new System.Drawing.Point(5, 85);
+            this.selectedProcessTextBox.Name = "selectedProcessTextBox";
+            this.selectedProcessTextBox.ReadOnly = true;
+            this.selectedProcessTextBox.Size = new System.Drawing.Size(182, 20);
+            this.selectedProcessTextBox.TabIndex = 3;
             // 
-            // DLLFileLabel
+            // dllFileLabel
             // 
-            this.DLLFileLabel.AutoSize = true;
-            this.DLLFileLabel.Location = new System.Drawing.Point(2, 19);
-            this.DLLFileLabel.Name = "DLLFileLabel";
-            this.DLLFileLabel.Size = new System.Drawing.Size(46, 13);
-            this.DLLFileLabel.TabIndex = 4;
-            this.DLLFileLabel.Text = "DLL File\r\n";
+            this.dllFileLabel.AutoSize = true;
+            this.dllFileLabel.Location = new System.Drawing.Point(2, 19);
+            this.dllFileLabel.Name = "dllFileLabel";
+            this.dllFileLabel.Size = new System.Drawing.Size(46, 13);
+            this.dllFileLabel.TabIndex = 4;
+            this.dllFileLabel.Text = "DLL File\r\n";
             // 
-            // SelectedProcessLabel
+            // selectedProcessLabel
             // 
-            this.SelectedProcessLabel.AutoSize = true;
-            this.SelectedProcessLabel.Location = new System.Drawing.Point(2, 69);
-            this.SelectedProcessLabel.Name = "SelectedProcessLabel";
-            this.SelectedProcessLabel.Size = new System.Drawing.Size(90, 13);
-            this.SelectedProcessLabel.TabIndex = 5;
-            this.SelectedProcessLabel.Text = "Selected Process";
+            this.selectedProcessLabel.AutoSize = true;
+            this.selectedProcessLabel.Location = new System.Drawing.Point(2, 69);
+            this.selectedProcessLabel.Name = "selectedProcessLabel";
+            this.selectedProcessLabel.Size = new System.Drawing.Size(90, 13);
+            this.selectedProcessLabel.TabIndex = 5;
+            this.selectedProcessLabel.Text = "Selected Process";
             // 
-            // InjectorGroupBox
+            // injectorGroupBox
             // 
-            this.InjectorGroupBox.Controls.Add(this.SelectedProcessLabel);
-            this.InjectorGroupBox.Controls.Add(this.DLLFileLabel);
-            this.InjectorGroupBox.Controls.Add(this.SelectedProcessTextBox);
-            this.InjectorGroupBox.Controls.Add(this.ChooseDLLButton);
-            this.InjectorGroupBox.Controls.Add(this.InjectDLLButton);
-            this.InjectorGroupBox.Controls.Add(this.DLLFileTextBox);
-            this.InjectorGroupBox.Location = new System.Drawing.Point(220, 75);
-            this.InjectorGroupBox.Name = "InjectorGroupBox";
-            this.InjectorGroupBox.Size = new System.Drawing.Size(192, 153);
-            this.InjectorGroupBox.TabIndex = 2;
-            this.InjectorGroupBox.TabStop = false;
-            this.InjectorGroupBox.Text = "Injector";
+            this.injectorGroupBox.Controls.Add(this.selectedProcessLabel);
+            this.injectorGroupBox.Controls.Add(this.dllFileLabel);
+            this.injectorGroupBox.Controls.Add(this.selectedProcessTextBox);
+            this.injectorGroupBox.Controls.Add(this.chooseDLLButton);
+            this.injectorGroupBox.Controls.Add(this.injectDLLButton);
+            this.injectorGroupBox.Controls.Add(this.dllFileTextBox);
+            this.injectorGroupBox.Location = new System.Drawing.Point(220, 75);
+            this.injectorGroupBox.Name = "injectorGroupBox";
+            this.injectorGroupBox.Size = new System.Drawing.Size(192, 153);
+            this.injectorGroupBox.TabIndex = 2;
+            this.injectorGroupBox.TabStop = false;
+            this.injectorGroupBox.Text = "Injector";
             // 
             // FileDialog
             // 
@@ -159,30 +159,30 @@
             this.FileDialog.InitialDirectory = "@\"C:\\\"";
             this.FileDialog.Title = "Select a DLL File";
             // 
-            // ProcessDataGrid
+            // processDataGrid
             // 
-            this.ProcessDataGrid.AllowUserToAddRows = false;
-            this.ProcessDataGrid.AllowUserToDeleteRows = false;
-            this.ProcessDataGrid.AllowUserToResizeColumns = false;
-            this.ProcessDataGrid.AllowUserToResizeRows = false;
-            this.ProcessDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.ProcessDataGrid.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.ProcessDataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ProcessDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.ProcessDataGrid.Location = new System.Drawing.Point(6, 19);
-            this.ProcessDataGrid.Name = "ProcessDataGrid";
-            this.ProcessDataGrid.ReadOnly = true;
-            this.ProcessDataGrid.RowHeadersVisible = false;
-            this.ProcessDataGrid.ShowCellErrors = false;
-            this.ProcessDataGrid.ShowEditingIcon = false;
-            this.ProcessDataGrid.ShowRowErrors = false;
-            this.ProcessDataGrid.Size = new System.Drawing.Size(188, 379);
-            this.ProcessDataGrid.TabIndex = 0;
-            this.ProcessDataGrid.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ProcessDataGrid_CellDoubleClick);
+            this.processDataGrid.AllowUserToAddRows = false;
+            this.processDataGrid.AllowUserToDeleteRows = false;
+            this.processDataGrid.AllowUserToResizeColumns = false;
+            this.processDataGrid.AllowUserToResizeRows = false;
+            this.processDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.processDataGrid.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.processDataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.processDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.processDataGrid.Location = new System.Drawing.Point(6, 19);
+            this.processDataGrid.Name = "processDataGrid";
+            this.processDataGrid.ReadOnly = true;
+            this.processDataGrid.RowHeadersVisible = false;
+            this.processDataGrid.ShowCellErrors = false;
+            this.processDataGrid.ShowEditingIcon = false;
+            this.processDataGrid.ShowRowErrors = false;
+            this.processDataGrid.Size = new System.Drawing.Size(188, 379);
+            this.processDataGrid.TabIndex = 0;
+            this.processDataGrid.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ProcessDataGrid_CellDoubleClick);
             // 
             // OpenProcessesGroupBox
             // 
-            this.OpenProcessesGroupBox.Controls.Add(this.ProcessDataGrid);
+            this.OpenProcessesGroupBox.Controls.Add(this.processDataGrid);
             this.OpenProcessesGroupBox.Location = new System.Drawing.Point(13, 75);
             this.OpenProcessesGroupBox.Name = "OpenProcessesGroupBox";
             this.OpenProcessesGroupBox.Size = new System.Drawing.Size(200, 404);
@@ -198,15 +198,15 @@
             this.panel1.Size = new System.Drawing.Size(426, 71);
             this.panel1.TabIndex = 0;
             // 
-            // StatusGroupBox
+            // statusGroupBox
             // 
-            this.StatusGroupBox.Controls.Add(this.StatusLabel);
-            this.StatusGroupBox.Location = new System.Drawing.Point(220, 301);
-            this.StatusGroupBox.Name = "StatusGroupBox";
-            this.StatusGroupBox.Size = new System.Drawing.Size(192, 178);
-            this.StatusGroupBox.TabIndex = 3;
-            this.StatusGroupBox.TabStop = false;
-            this.StatusGroupBox.Text = "Status";
+            this.statusGroupBox.Controls.Add(this.StatusLabel);
+            this.statusGroupBox.Location = new System.Drawing.Point(220, 301);
+            this.statusGroupBox.Name = "statusGroupBox";
+            this.statusGroupBox.Size = new System.Drawing.Size(192, 178);
+            this.statusGroupBox.TabIndex = 3;
+            this.statusGroupBox.TabStop = false;
+            this.statusGroupBox.Text = "Status";
             // 
             // StatusLabel
             // 
@@ -221,9 +221,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(424, 491);
-            this.Controls.Add(this.OptionsGroupBox);
-            this.Controls.Add(this.StatusGroupBox);
-            this.Controls.Add(this.InjectorGroupBox);
+            this.Controls.Add(this.optionsGroupBox);
+            this.Controls.Add(this.statusGroupBox);
+            this.Controls.Add(this.injectorGroupBox);
             this.Controls.Add(this.OpenProcessesGroupBox);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -232,35 +232,35 @@
             this.ShowIcon = false;
             this.Text = "Simple Injector";
             this.Load += new System.EventHandler(this.Interface_Load);
-            this.OptionsGroupBox.ResumeLayout(false);
-            this.OptionsGroupBox.PerformLayout();
-            this.InjectorGroupBox.ResumeLayout(false);
-            this.InjectorGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ProcessDataGrid)).EndInit();
+            this.optionsGroupBox.ResumeLayout(false);
+            this.optionsGroupBox.PerformLayout();
+            this.injectorGroupBox.ResumeLayout(false);
+            this.injectorGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.processDataGrid)).EndInit();
             this.OpenProcessesGroupBox.ResumeLayout(false);
-            this.StatusGroupBox.ResumeLayout(false);
-            this.StatusGroupBox.PerformLayout();
+            this.statusGroupBox.ResumeLayout(false);
+            this.statusGroupBox.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.CheckBox CloseAfterInjectCheckBox;
-        private System.Windows.Forms.CheckBox AutoInjectCheckBox;
-        private System.Windows.Forms.GroupBox OptionsGroupBox;
-        private System.Windows.Forms.TextBox DLLFileTextBox;
-        private System.Windows.Forms.Button InjectDLLButton;
-        private System.Windows.Forms.Button ChooseDLLButton;
-        private System.Windows.Forms.TextBox SelectedProcessTextBox;
-        private System.Windows.Forms.Label DLLFileLabel;
-        private System.Windows.Forms.Label SelectedProcessLabel;
-        private System.Windows.Forms.GroupBox InjectorGroupBox;
+        private System.Windows.Forms.CheckBox closeAfterInjectCheckBox;
+        private System.Windows.Forms.CheckBox autoInjectCheckBox;
+        private System.Windows.Forms.GroupBox optionsGroupBox;
+        private System.Windows.Forms.TextBox dllFileTextBox;
+        private System.Windows.Forms.Button injectDLLButton;
+        private System.Windows.Forms.Button chooseDLLButton;
+        private System.Windows.Forms.TextBox selectedProcessTextBox;
+        private System.Windows.Forms.Label dllFileLabel;
+        private System.Windows.Forms.Label selectedProcessLabel;
+        private System.Windows.Forms.GroupBox injectorGroupBox;
         private System.Windows.Forms.OpenFileDialog FileDialog;
-        private System.Windows.Forms.DataGridView ProcessDataGrid;
+        private System.Windows.Forms.DataGridView processDataGrid;
         private System.Windows.Forms.GroupBox OpenProcessesGroupBox;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.GroupBox StatusGroupBox;
+        private System.Windows.Forms.GroupBox statusGroupBox;
         private System.Windows.Forms.Label StatusLabel;
     }
 }
